@@ -1,0 +1,50 @@
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  font-family: 'Poppins';
+  nav{
+    ul{
+      display: flex;
+      flex-direction: row;
+      li{
+        padding-right: 50px;
+        a{
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          text-transform: capitalize;
+          color: var(--color-text__white);
+        }
+      }
+    }
+  }
+  .header__btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: var(--color-site__buttons);
+    transition: .3s;
+    span{
+      position: relative;
+      padding-right: 12px;
+      text-decoration: none;
+      color: white;
+    }
+    .arrow{
+      display: block;
+      content: '';
+      background: url(./../../icons/Arrow_white.svg);
+      width: 21px;
+      height: 8px;
+      transition: .3s;
+    }
+  }
+}

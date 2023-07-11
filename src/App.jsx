@@ -18,12 +18,14 @@ import profileImg from './img/profileImg.png';
 import imageCoffee from './img/Image—копия1.jpg';
 import imageBurger from './img/Image-копия.jpg';
 import imageSandwich from './img/Imageкопия2.jpg';
+import Button from './components/Button/Button';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className='App'>
       <div class='wrapper'>
-        <header>
+        {/* <header>
           <nav>
             <ul>
               <li>
@@ -53,7 +55,8 @@ function App() {
             <span>Clone Project</span>
             <span class='arrow'></span>
           </a>
-        </header>
+        </header> */}
+        <Header />
         <main>
           <div class='welcome'>
             <div class='welcome__text'>
@@ -63,10 +66,7 @@ function App() {
                 directly on the text to start adding your own words. You can
                 move the text.
               </p>
-              <button class='button'>
-                <span>view menu</span>
-                <span class='arrow'></span>
-              </button>
+              <Button />
               <div class='header__subtext'>
                 <h2 class='text__medium'>Opening Times</h2>
                 <p class='subtext__medium'>
@@ -136,10 +136,7 @@ function App() {
                   </p>
                 </div>
               </div>
-              <button class='button'>
-                <span>view menu</span>
-                <span class='arrow'></span>
-              </button>
+              <Button />
             </div>
             <div class='feature__img'>
               <img src={knowMore1} alt='' />
@@ -274,10 +271,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <button class='button'>
-              <span>view menu</span>
-              <span class='arrow'></span>
-            </button>
+            <Button />
           </div>
           <div class='quote'>
             <div class='quote__info'>

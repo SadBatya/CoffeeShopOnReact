@@ -1,0 +1,21 @@
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 164px;
+  height: 48px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: var(--color-site__buttons);
+  color: var(--color-text__black);
+  .arrow{
+    display: block;
+    content: '';
+    background: url(../../icons/Arrow_black.svg);
+    width: 21px;
+    height: 8px;
+  }
+}
