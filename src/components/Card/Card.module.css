@@ -1,0 +1,44 @@
+.servingCards {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 65px;
+  background-color: var(--background-cards);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 298px;
+  height: 216px;
+  margin: 64px 64px 128px 64px;
+}
+
+.cardIcon {
+  display: block;
+  content: "";
+  background: url(./../../icons/IconTort.svg);
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+}
+
+.cardTitle {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  color: var(--color-text__white);
+  margin-top: 24px;
+}
+
+.subtitle {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: var(--color-text__gray);
+  margin-top: 12px;
+}

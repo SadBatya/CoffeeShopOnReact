@@ -1,4 +1,8 @@
 import React from 'react';
+import facebook from './../../icons/Facebook.svg'
+import twitter from './../../icons/Twitter.svg'
+import instagram from './../../icons/Instagram.svg'
+import linkeIn from './../../icons/LinkeIn.svg'
 import styles from './Footer.module.css';
 
 const Footer = () => {

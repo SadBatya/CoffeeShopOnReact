@@ -1,0 +1,30 @@
+.menuCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 31px;
+  margin-top: 83px;
+}
+
+.menuCard {
+  width: 405px;
+  height: 351px;
+  background-color: var(--background-cards-menu);
+}
+
+.cardName {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--color-text__white);
+  opacity: 0.87;
+  padding: 24px 32px 24px 32px;
+}
+
+.cardName:last-child {
+  font-family: "Poppins";
+}

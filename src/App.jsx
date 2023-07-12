@@ -1,25 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-import facebook from './icons/Facebook.svg';
-import twitter from './icons/Twitter.svg';
-import instagram from './icons/Instagram.svg';
-import linkeIn from './icons/LinkeIn.svg';
 import map from './img/Map.jpg';
 import headerImg from './img/Header_Image.png';
 import knowMore1 from './img/Know_more_Image_1.jpg';
 import knowMore2 from './img/Know_more_Image_2.jpg';
-import cardImg5 from './img/Image-5.jpg';
-import cardImg4 from './img/Image-4.jpg';
-import cardImg3 from './img/Image-1.jpg';
-import cardImg2 from './img/Image-2.jpg';
-import cardImg1 from './img/Image-1.jpg';
-import cardImg from './img/Imageкопия.jpg';
 import profileImg from './img/profileImg.png';
 import imageCoffee from './img/Image—копия1.jpg';
 import imageBurger from './img/Image-копия.jpg';
 import imageSandwich from './img/Imageкопия2.jpg';
 import Button from './components/Button/Button';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer'
+import Card from './components/Card/Card';
+import FoodCard from './components/FoodCard/FoodCard';
+import BlogCard from './components/BlogCard/BlogCard';
 
 function App() {
   return (
@@ -160,7 +153,13 @@ function App() {
               </p>
             </div>
             <div class='serving__cards'>
-              <div class='card'>
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              {/* <div class='card'>
                 <div class='card__icon-1'></div>
                 <div class='card__title'>Quafe Cake</div>
                 <p class='subtitle'>
@@ -207,8 +206,9 @@ function App() {
                   Through True Rich Attended no end it his mother since
                   favourable real had half every him.
                 </p>
-              </div>
+              </div> */}
             </div>
+            {/* <ServingCard /> */}
           </div>
           <div class='menu'>
             <div class='header__element'>
@@ -228,7 +228,13 @@ function App() {
               </p>
             </div>
             <div class='menu__cards'>
-              <div class='menu__card'>
+              <FoodCard />
+              <FoodCard />
+              <FoodCard />
+              <FoodCard />
+              <FoodCard />
+              <FoodCard />
+              {/* <div class='menu__card'>
                 <img src={cardImg5} alt='' />
                 <div class='card__name'>
                   <span>Drp Cofee</span>
@@ -269,7 +275,7 @@ function App() {
                   <span>Chinese Soup</span>
                   <span>$8.85</span>
                 </div>
-              </div>
+              </div> */}
             </div>
             <Button />
           </div>
@@ -299,7 +305,10 @@ function App() {
               <h1 class='title mod__fz'>Read Our Lastest Blog</h1>
             </div>
             <div class='blog__cards'>
-              <div class='blog__card'>
+              <BlogCard />
+              <BlogCard />
+              <BlogCard />
+              {/* <div class='blog__card'>
                 <div class='blog__info'>
                   <div class='card__date'>21 Jun 2021</div>
                   <div class='card__title'>Extra Thick Homemad Pizza Sauce</div>
@@ -339,7 +348,7 @@ function App() {
                   </p>
                 </div>
                 <img src={imageSandwich} alt='' />
-              </div>
+              </div> */}
               <div class='contact'>
                 <div class='contact__info'>
                   <h4>Working Hour</h4>
@@ -366,7 +375,7 @@ function App() {
             </div>
           </div>
         </main>
-        <footer>
+        {/* <footer>
           <a href='#' class='logo'></a>
           <nav>
             <ul>
@@ -421,7 +430,8 @@ function App() {
               <div class='arrow'></div>
             </div>
           </div>
-        </footer>
+        </footer> */}
+        <Footer />
       </div>
     </div>
   );

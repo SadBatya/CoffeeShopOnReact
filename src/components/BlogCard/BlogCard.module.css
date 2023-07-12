@@ -1,0 +1,32 @@
+.blogCard {
+  width: 405px;
+  height: 526px;
+  background-color: var(--background-cards-menu);
+}
+.blogInfo {
+  padding: 32px;
+}
+.cardDate {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: var(--color-text__gray);
+}
+.cardTitle {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  color: var(--color-text__white);
+  opacity: 0.87;
+}
+.subtitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: var(--color-text__gray);
+  margin-top: 16px;
+}
