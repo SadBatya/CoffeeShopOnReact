@@ -12,7 +12,7 @@ import BlogCard from './../../components/BlogCard/BlogCard';
 
 const HomePage = () => {
   return (
-    <main>
+    <div>
       <div class='welcome'>
         <div class='welcome__text'>
           <h1 class='title'>We serve high quality foods of all kinds.</h1>
@@ -330,7 +330,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 
