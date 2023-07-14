@@ -47,4 +47,14 @@ header{
       transition: .3s;
     }
   }
-}
+  .logo{
+    display: block;
+    content: '';
+    background: url(./../../icons/Logo.svg);
+    width: 96px;
+    height: 20px;
+  }
+  .active{
+    border-bottom: 1px solid white;
+  }
+} 

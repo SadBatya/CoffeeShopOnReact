@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Header.module.scss';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   console.log(styles)
@@ -8,32 +9,32 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <a href='#' class='logo'></a>
+            <NavLink to='#' className={styles.logo}></NavLink>
           </li>
           <li>
-            <a href='#'>Home</a>
+            <NavLink to='/HomePage' className={navData => navData.isActive ? styles.active : styles.item}>Home</NavLink>
           </li>
           <li>
-            <a href='#'>Menu</a>
+            <NavLink to='/Menu' className={navData => navData.isActive ? styles.active : styles.item}>Menu</NavLink>
           </li>
           <li>
-            <a href='#'>About us</a>
+            <NavLink to='/AboutUs' className={navData => navData.isActive ? styles.active : styles.item}>About us</NavLink>
           </li>
           <li>
-            <a href='#'>Our Story</a>
+            <NavLink to='/OurStory' className={navData => navData.isActive ? styles.active : styles.item}>Our Story</NavLink>
           </li>
           <li>
-            <a href='#'>Blog</a>
+            <NavLink to='/Blog' className={navData => navData.isActive ? styles.active : styles.item}>Blog</NavLink>
           </li>
           <li>
-            <a href='#'>Contact</a>
+            <NavLink to='/Contact' className={navData => navData.isActive ? styles.active : styles.item}>Contact</NavLink>
           </li>
         </ul>
       </nav>
-      <a href='#' className={styles.header__btn}>
+      <NavLink to='#' className={styles.header__btn}>
         <span>Clone Project</span>
         <span className={styles.arrow}></span>
-      </a>
+      </NavLink>
     </header>
   );
 };

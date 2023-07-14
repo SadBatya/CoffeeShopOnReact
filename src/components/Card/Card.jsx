@@ -14,17 +14,6 @@ const Card = (props) => {
   );
 };
 
-const ServingCard = () => {
-  return (
-    <div className={styles.servingCards}>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-    </div>
-  );
-};
+
 
 export default Card
