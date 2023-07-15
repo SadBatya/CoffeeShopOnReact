@@ -15,7 +15,7 @@ const Header = () => {
             <NavLink to='/HomePage' className={navData => navData.isActive ? styles.active : styles.item}>Home</NavLink>
           </li>
           <li>
-            <NavLink to='/Menu' className={navData => navData.isActive ? styles.active : styles.item}>Menu</NavLink>
+            <NavLink to='/MenuPage' className={navData => navData.isActive ? styles.active : styles.item}>Menu</NavLink>
           </li>
           <li>
             <NavLink to='/AboutUs' className={navData => navData.isActive ? styles.active : styles.item}>About us</NavLink>

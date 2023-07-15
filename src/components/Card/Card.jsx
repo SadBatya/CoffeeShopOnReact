@@ -4,16 +4,13 @@ import styles from './Card.module.css';
 const Card = (props) => {
   return (
     <div className={styles.card}>
-      <div className={styles.cardIcon}></div>
-      <div className={styles.cardTitle}>Quafe Cake</div>
+      <div className={styles.cardIcon}>{props.img}</div>
+      <div className={styles.cardTitle}>{props.name}</div>
       <p className={styles.subtitle}>
-        Through True Rich Attended no end it his mother since favourable real
-        had half every him.
+        {props.description}
       </p>
     </div>
   );
 };
-
-
 
 export default Card
