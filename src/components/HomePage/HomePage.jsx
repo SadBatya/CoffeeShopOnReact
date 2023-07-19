@@ -9,6 +9,8 @@ import Card from './../../components/Card/Card';
 import FoodCard from './../../components/FoodCard/FoodCard';
 import BlogCard from './../../components/BlogCard/BlogCard';
 import products from '../../mocks';
+import cardsInfo from './../../mocks/CardsInfo'
+
 
 
 const HomePage = () => {
@@ -111,7 +113,7 @@ const HomePage = () => {
           </p>
         </div>
         <div class='serving__cards'>
-          { products.map(product => <Card img={product.img} name={product.name} description={product.description}/>)}
+          { products.map(product => <Card img={product.icon} name={product.name} description={product.description}/>)}
         </div>
       </div>
       <div class='menu'>
@@ -131,12 +133,7 @@ const HomePage = () => {
           </p>
         </div>
         <div class='menu__cards'>
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
+          {cardsInfo.map(card => <FoodCard img={card.img} name={card.name} price={card.price}/>)}
         </div>
         <Button />
       </div>

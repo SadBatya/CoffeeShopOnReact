@@ -11,8 +11,6 @@
   --background-cards-menu:#1F1D21;
 }
 
-@import './assets/index.scss';
-
 /* Reset and base styles  */
 * {
 	padding: 0px;
@@ -453,6 +451,7 @@ main{
         line-height: 150%;
         color: var(--color-text__blue);
         margin-top: 32px;
+        text-align: left;
       }
 
       .mod__width{

@@ -1,14 +1,13 @@
 import React from 'react';
 import styles from './FoodCard.module.css';
-import cardImg from './../../img/Image-1.jpg'
 
-const FoodCard = () => {
+const FoodCard = (props) => {
   return (
     <div class={styles.menuCard}>
-      <img src={cardImg} alt='' />
+      <div>{props.icon}</div>
       <div class={styles.cardName}>
-        <span>Drp Cofee</span>
-        <span>$08.85</span>
+        <span>{props.name}</span>
+        <span>{props.price}</span>
       </div>
     </div>
   );

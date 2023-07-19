@@ -5,7 +5,6 @@ import iconMeet from './../icons/IconMeet.svg'
 import iconTort from './../icons/IconTort.svg'
 import iconCola from './../icons/iconCola.svg'
 
-
 const products = [
   {
     id: 1,
@@ -44,8 +43,5 @@ const products = [
     description: 'Through True Rich Attended no end it his mother since favourable real had half every him.'
   },
 ]
-
-
-
 
 export default products

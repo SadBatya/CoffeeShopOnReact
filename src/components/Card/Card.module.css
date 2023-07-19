@@ -21,7 +21,6 @@
   background: url(./../../icons/IconTort.svg);
   width: 48px;
   height: 48px;
-  margin: 0 auto;
 }
 
 .cardTitle {
@@ -31,6 +30,7 @@
   line-height: 150%;
   color: var(--color-text__white);
   margin-top: 24px;
+  text-align: left;
 }
 
 .subtitle {
@@ -41,4 +41,5 @@
   line-height: 175%;
   color: var(--color-text__gray);
   margin-top: 12px;
+  text-align: left;
 }
