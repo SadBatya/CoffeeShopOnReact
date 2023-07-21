@@ -10,8 +10,7 @@ import FoodCard from './../../components/FoodCard/FoodCard';
 import BlogCard from './../../components/BlogCard/BlogCard';
 import products from '../../mocks';
 import cardsInfo from './../../mocks/CardsInfo'
-
-
+import BlogCardInfo from './../../mocks/BlogCardsInfo'
 
 const HomePage = () => {
   return (
@@ -163,9 +162,7 @@ const HomePage = () => {
           <h1 class='title mod__fz'>Read Our Lastest Blog</h1>
         </div>
         <div class='blog__cards'>
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
+          {BlogCardInfo.map(card => <BlogCard date={card.date} title={card.title} description={card.description} img={card.img} />)}
           <div class='contact'>
             <div class='contact__info'>
               <h4>Working Hour</h4>

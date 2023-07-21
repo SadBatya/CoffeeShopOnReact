@@ -1,20 +1,18 @@
 import React from 'react';
 import styles from './BlogCard.module.css';
-import cooffeeImg from './../../img/Image—копия1.jpg'
 
-const BlogCard = () => {
+
+const BlogCard = (props) => {
   return (
     <div className={styles.blogCard}>
       <div className={styles.blogInfo}>
-        <div className={styles.cardDate}>21 Jun 2021</div>
-        <div className={styles.cardTitle}>Extra Thick Homemad Pizza Sauce</div>
+        <div className={styles.cardDate}>{props.date}</div>
+        <div className={styles.cardTitle}>{props.title}</div>
         <p className={styles.subtitle}>
-          Through True Rich Attended does no end it his mother since favourable
-          real had half every him case in packages enquire we up ecstatic..
-          Through True Rich Attended does no end it his mother
+          {props.description}
         </p>
       </div>
-      <img src={cooffeeImg} alt='' />
+      <img src={props.img} alt='' />
     </div>
   );
 };

@@ -1,10 +1,10 @@
-import React from "react";
-import products from './../../mocks/index'
-import styles from './MenuPage.module.scss'
+import MenuCards from '../MenuCards/MenuCards'
+import './../../../src/App.css'
+import cardsInfo from './../../mocks/MenuCards'
 
 const MenuPage = () => {
   return (
-    <div className={styles.wrapper}>
+    <div className='wrapper'>
       <div class="menu__title">
         <div class="title__name">
           <div class="title__text--small">
@@ -33,90 +33,7 @@ const MenuPage = () => {
           </nav>
         </div>
         <div class="menu__cards">
-          <div class="menu__card coffee">
-            <img src="./img/Image-11.png" alt="" />
-            <div class="card__name">
-              <span>Drp Cofee</span>
-              <span>$08.85</span>
-            </div>
-          </div>
-          <div class="menu__card snacks">
-            <img src="./img/Image-10.png" alt="" />
-            <div class="card__name">
-              <span>Choco Cup Cake</span>
-              <span>$4.85</span>
-            </div>
-          </div>
-          <div class="menu__card fastFood">
-            <img src="./img/Image-9.png" alt="" />
-            <div class="card__name">
-              <span>Chicken Burger</span>
-              <span>$8.85</span>
-            </div>
-          </div>
-          <div class="menu__card fastFood">
-            <img src="./img/Image-8.png" alt="" />
-            <div class="card__name">
-              <span>French Fries</span>
-              <span>$7.85</span>
-            </div>
-          </div>
-          <div class="menu__card fastFood">
-            <img src="./img/Image-7.png" alt="" />
-            <div class="card__name">
-              <span>Sandwitch</span>
-              <span>$3.97</span>
-            </div>
-          </div>
-          <div class="menu__card fastFood">
-            <img src="./img/Image-6.png" alt="" />
-            <div class="card__name">
-              <span>Chinese Soup</span>
-              <span>$8.85</span>
-            </div>
-          </div>
-          <div class="menu__card fastFood">
-            <img src="./img/Image-5.png" alt="" />
-            <div class="card__name">
-              <span>Quafe Brade</span>
-              <span>$7.85</span>
-            </div>
-          </div>
-          <div class="menu__card fastFood">
-            <img src="./img/Image-7.png" alt="" />
-            <div class="card__name">
-              <span>Dalgona Cofee</span>
-              <span>$4.97</span>
-            </div>
-          </div>
-          <div class="menu__card snacks">
-            <img src="./img/Image-3.png" alt="" />
-            <div class="card__name">
-              <span>Chowmin Noodle</span>
-              <span>$8.85</span>
-            </div>
-          </div>
-          <div class="menu__card cocktails">
-            <img src="./img/Image-2.png" alt="" />
-            <div class="card__name">
-              <span>Coka Cola</span>
-              <span>$7.85</span>
-            </div>
-          </div>
-          <div class="menu__card quafeCake">
-            <img src="./img/Image-1.png" alt="" />
-            <div class="card__name">
-              <span>Fruit Salad</span>
-              <span>$3.97</span>
-            </div>
-          </div>
-          <div class="menu__card cocktails">
-            <img src="./img/Image.png" alt="" />
-            <div class="card__name">
-              <span>Cocktail</span>
-              <span>$8.85</span>
-            </div>
-          </div>
+          {cardsInfo.map((card) => <MenuCards img={card.img} name={card.name} price={card.price}/>)}
         </div>
       </div>
       <div class="contact">

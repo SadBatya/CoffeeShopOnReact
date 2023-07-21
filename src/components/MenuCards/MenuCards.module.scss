@@ -1,0 +1,38 @@
+.menu__card{
+  width: 405px;
+  height: 351px;
+  background-color: var(--background-cards-menu);
+  .card__name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--color-text__white);
+    opacity: 0.87;
+    padding: 24px 32px 24px 32px;
+    :last-child{
+      font-family: 'Poppins';
+    }
+  }
+}
+.hide{
+  opacity: 1;
+  animation-name: hide;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  transition: .3s ease-in-out;
+}
+
+@keyframes hide {
+  to{
+    opacity: 0;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+}

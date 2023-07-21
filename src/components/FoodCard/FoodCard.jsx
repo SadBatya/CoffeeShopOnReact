@@ -4,7 +4,7 @@ import styles from './FoodCard.module.css';
 const FoodCard = (props) => {
   return (
     <div class={styles.menuCard}>
-      <div>{props.icon}</div>
+      <img src={props.img}/>
       <div class={styles.cardName}>
         <span>{props.name}</span>
         <span>{props.price}</span>

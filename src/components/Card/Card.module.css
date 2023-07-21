@@ -17,8 +17,6 @@
 
 .cardIcon {
   display: block;
-  content: "";
-  background: url(./../../icons/IconTort.svg);
   width: 48px;
   height: 48px;
 }
